@@ -79,7 +79,6 @@ class Maze {
         return this.countSurroundingPath(exRow, exCol) <= 1
     }
     
-    // 周囲1マスにある道の数を数えるメソッド
     private fun countSurroundingPath(row : Int, col : Int) : Int {
         var num = 0
         if(row - 1 < 0 || !this.gameData[row - 1][col]) {
